@@ -1,0 +1,36 @@
+{
+  "panel": {
+    "title": "AI Assistant",
+    "styleLabel": "Style: ",
+    "styles": {
+      "simple": "Simple",
+      "business": "Business",
+      "lively": "Lively",
+      "tech": "Tech",
+      "chinese": "Chinese"
+    },
+    "unsatisfiedHint": "Not satisfied? Describe changes to adjust",
+    "cancelGenerate": "Cancel Generation"
+  },
+  "input": {
+    "quickCommands": {
+      "modifySelected": "Modify Selected",
+      "modifySelectedPrefix": "Modify selected element: ",
+      "adjustColor": "Adjust Colors",
+      "adjustColorPrefix": "Adjust page color scheme: ",
+      "addAnimation": "Add Animation",
+      "addAnimationPrefix": "Add animation effects to the page: ",
+      "regenerate": "Regenerate"
+    },
+    "placeholder": "Describe the page you want... (Shift+Enter for new line)",
+    "generating": "Generating...",
+    "generateComplete": "Generation Complete",
+    "pageGenerated": "Page generated",
+    "generateSuccess": "✅ Generation complete! Page contains: {{summary}}",
+    "requestFailed": "❌ Request failed: {{error}}",
+    "elementInfo": "[Element ID: {{id}}, Type: {{type}}, Position: ({{x}}, {{y}}), Size: {{width}}x{{height}}]",
+    "typeSummary": "{{type}}({{count}})",
+    "aiPageName": "AI Generated Page",
+    "tip": "💡 Tip: Drag elements from the layer panel here to let AI know which element to modify. Shift+Enter for new line"
+  }
+}

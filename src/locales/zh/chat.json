@@ -1,0 +1,36 @@
+{
+  "panel": {
+    "title": "AI 助手",
+    "styleLabel": "风格：",
+    "styles": {
+      "simple": "简约",
+      "business": "商务",
+      "lively": "活泼",
+      "tech": "科技",
+      "chinese": "中国风"
+    },
+    "unsatisfiedHint": "对结果不满意？描述修改需求即可调整",
+    "cancelGenerate": "取消生成"
+  },
+  "input": {
+    "quickCommands": {
+      "modifySelected": "修改选中",
+      "modifySelectedPrefix": "修改选中的元素：",
+      "adjustColor": "调整配色",
+      "adjustColorPrefix": "调整页面配色方案：",
+      "addAnimation": "添加动画",
+      "addAnimationPrefix": "为页面添加动画效果：",
+      "regenerate": "重新生成"
+    },
+    "placeholder": "描述你想要的页面... (Shift+Enter换行)",
+    "generating": "正在生成...",
+    "generateComplete": "生成完成",
+    "pageGenerated": "页面已生成",
+    "generateSuccess": "✅ 生成完成！页面包含：{{summary}}",
+    "requestFailed": "❌ 请求失败: {{error}}",
+    "elementInfo": "[元素ID: {{id}}, 类型: {{type}}, 位置: ({{x}}, {{y}}), 尺寸: {{width}}x{{height}}]",
+    "typeSummary": "{{type}}({{count}}个)",
+    "aiPageName": "AI生成页面",
+    "tip": "💡 提示：可以从图层面板拖动元素到此处，让AI知道要修改哪个元素。Shift+Enter换行"
+  }
+}

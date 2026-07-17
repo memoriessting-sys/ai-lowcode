@@ -1,0 +1,146 @@
+{
+  "elementLabels": {
+    "text": "文本",
+    "image": "图片",
+    "button": "按钮",
+    "input": "输入框",
+    "container": "容器",
+    "video": "视频",
+    "audio": "音频",
+    "link": "链接",
+    "divider": "分割线",
+    "icon": "图标",
+    "card": "卡片",
+    "select": "下拉框"
+  },
+  "buttons": {
+    "confirm": "确定",
+    "cancel": "取消",
+    "copy": "复制",
+    "copied": "已复制",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "create": "创建",
+    "save": "保存",
+    "back": "返回",
+    "loading": "加载中...",
+    "submit": "提交",
+    "submitting": "提交中...",
+    "fetch": "获取",
+    "import": "导入",
+    "export": "导出",
+    "share": "分享",
+    "download": "下载",
+    "upload": "上传",
+    "use": "使用",
+    "reset": "重置"
+  },
+  "status": {
+    "loading": "加载中...",
+    "success": "成功",
+    "error": "错误",
+    "processing": "处理中...",
+    "noData": "暂无数据",
+    "loadFailed": "加载失败",
+    "unknownError": "未知错误"
+  },
+  "date": {
+    "today": "今天",
+    "yesterday": "昨天",
+    "daysAgo": "{{count}} 天前",
+    "minutesAgo": "{{count}} 分钟前",
+    "hoursAgo": "{{count}} 小时前",
+    "justNow": "刚刚"
+  },
+  "confirm": {
+    "delete": "确定要删除吗？",
+    "deletePage": "确定要删除这个页面吗？",
+    "deleteChat": "确定要删除这条对话记录吗？",
+    "deleteShare": "确定要删除这个分享吗？删除后链接将失效。",
+    "clearAll": "确定要清空所有历史记录吗？"
+  },
+  "auth": {
+    "login": "登录",
+    "logout": "退出登录",
+    "guest": "以游客身份继续",
+    "guestLimit": "游客每天可使用 AI 助手 1 次"
+  },
+  "nav": {
+    "home": "首页",
+    "templates": "模板",
+    "custom": "自定义",
+    "history": "历史记录",
+    "announcements": "公告",
+    "donate": "打赏",
+    "feedback": "反馈",
+    "logoAlt": "灵页LingYe",
+    "webEditor": "网页编辑器",
+    "exportHtml": "导出 HTML",
+    "generalEditor": "通用编辑器",
+    "exportPdf": "导出 PDF"
+  },
+  "templateCategories": {
+    "all": "全部",
+    "resume": "个人作品集",
+    "poster": "活动页",
+    "general": "通用",
+    "ecommerce": "电商",
+    "education": "教育",
+    "corporate": "企业官网",
+    "portfolio": "个人作品集",
+    "event": "活动页"
+  },
+  "visibility": {
+    "public": "公开",
+    "private": "私有",
+    "publicDesc": "任何人可通过链接查看",
+    "privateDesc": "仅自己可查看",
+    "setPrivate": "设为私有",
+    "setPublic": "设为公开"
+  },
+  "share": {
+    "copyLink": "复制链接",
+    "copyShareLink": "复制分享链接",
+    "deleteShare": "删除分享",
+    "viewCount": "{{count}} 次浏览",
+    "offShelf": "已下架",
+    "timesUsed": "使用 {{count}} 次"
+  },
+  "page": {
+    "pageName": "页面 {{number}}",
+    "currentPage": "当前页面",
+    "allPages": "全部页面 ({{count}})",
+    "elementCount": "{{count}} 个元素",
+    "messageCount": "{{count}} 条消息",
+    "pageCount": "{{count}} 个页面"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English",
+    "switchLang": "切换语言"
+  },
+  "defaultContent": {
+    "text": "文本内容",
+    "image": "图片",
+    "button": "按钮",
+    "input": "请输入",
+    "link": "链接",
+    "cardTitle": "卡片标题",
+    "cardContent": "卡片内容",
+    "selectOption": "选项{{number}}",
+    "selectPlaceholder": "请选择",
+    "audioPlayer": "音频播放器",
+    "videoPlayer": "视频播放器",
+    "iconNotFound": "图标不存在",
+    "clickToJump": "点击跳转到目标页面",
+    "zoomOut": "缩小 (Ctrl+-)",
+    "zoomIn": "放大 (Ctrl++)",
+    "zoomReset": "重置 (Ctrl+0)",
+    "exportPageTitle": "导出页面",
+    "downloading": "正在下载: {{filename}}",
+    "downloadFailed": "下载失败: {{message}}",
+    "zipDownloadFailed": "ZIP 下载失败: {{message}}",
+    "selectOptionsPlaceholder": "选项1&#10;选项2&#10;选项3"
+  }
+}

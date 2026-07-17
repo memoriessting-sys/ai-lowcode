@@ -1,0 +1,133 @@
+{
+  "landing": {
+    "heroTitle": "Create Amazing Content with AI",
+    "heroSubtitle": "LingYe is an AI-powered visual design platform that helps you quickly create",
+    "heroType1": "resumes",
+    "heroType2": "posters",
+    "heroType3": "webpages",
+    "heroTypeEnd": " and more — no design experience needed.",
+    "startCreating": "Start Creating",
+    "startCreatingHint": "Choose a template or create from scratch",
+    "chooseTemplate": "Choose Template",
+    "customCreate": "Custom Create",
+    "getStarted": "Get Started",
+    "getStartedHint": "Login or sign up to start your creative journey",
+    "loginRegister": "Login / Sign Up",
+    "guestMode": "Guest Mode",
+    "features": {
+      "aiGenerate": "AI Smart Generation",
+      "aiGenerateDesc": "Describe what you want, AI generates professional designs",
+      "visualEdit": "Visual Editing",
+      "visualEditDesc": "Drag to adjust layout, preview in real-time",
+      "multiExport": "Multi-format Export",
+      "multiExportDesc": "Support HTML, PDF, ZIP and more export formats"
+    },
+    "scenarios": {
+      "resume": "Professional Resume",
+      "resumeDesc": "Various resume templates, one-click generation, PDF export",
+      "poster": "Creative Poster",
+      "posterDesc": "Event, promotional, and recruitment posters made easy",
+      "webpage": "Web Design",
+      "webpageDesc": "Landing pages, product pages, invitations, export as HTML"
+    },
+    "stepsTitle": "Create in 3 Simple Steps",
+    "stepsSubtitle": "No design experience needed — describe in natural language, AI generates professional designs",
+    "step1": "Describe",
+    "step1Desc": "Tell AI what you want in natural language",
+    "step2": "AI Generate",
+    "step2Desc": "AI automatically generates a complete design layout",
+    "step3": "Edit & Export",
+    "step3Desc": "Drag to adjust details, export in multiple formats",
+    "scenariosTitle": "Rich Application Scenarios",
+    "scenariosSubtitle": "Whether it's resumes, event posters, or product landing pages, LingYe makes it easy",
+    "previewTitle": "Product Preview",
+    "editorAlt": "Editor Interface",
+    "editorTitle": "Smart Editor",
+    "editorDesc": "AI Chat + Real-time Preview + Drag & Drop",
+    "marketAlt": "Template Market",
+    "marketTitle": "Template Market",
+    "marketDesc": "Resume / Poster / General Templates",
+    "exportAlt": "Export Preview",
+    "exportTitle": "Multi-format Export",
+    "exportDesc": "HTML / PDF / ZIP Package"
+  },
+  "history": {
+    "title": "History",
+    "localOnly": "(Saved locally only)",
+    "tabs": {
+      "pages": "Pages",
+      "chats": "Chats",
+      "shares": "Shares"
+    },
+    "emptyPages": "No page history",
+    "emptyChats": "No chat history",
+    "emptyShares": "No share records",
+    "emptyChat": "Empty chat",
+    "aiChat": "AI Chat"
+  },
+  "templateMarket": {
+    "title": "Template Market",
+    "empty": "No templates",
+    "noPreview": "No preview image",
+    "useTemplate": "Use This Template"
+  },
+  "announcement": {
+    "modalTitle": "Important Announcement",
+    "dontRemind": "Don't remind me today",
+    "gotIt": "Got it",
+    "pageTitle": "Announcements",
+    "empty": "No announcements",
+    "typeInfo": "Notice",
+    "typeWarning": "Important"
+  },
+  "feedback": {
+    "title": "Feedback & Contact",
+    "intro": "Thank you for using LingYe. If you have questions or suggestions, feel free to reach out",
+    "submitIssue": "Submit issue or suggestion",
+    "qqGroup": "QQ Group",
+    "reportBug": "Report Bug",
+    "reportBugDesc": "Submit a bug report"
+  },
+  "donate": {
+    "title": "Support the Developer",
+    "heading": "Thank you for your support!",
+    "body": "If LingYe has been helpful, consider buying the developer a coffee. Your support drives continuous improvement.",
+    "wechatPay": "WeChat Pay",
+    "wechatScan": "Scan with WeChat to pay",
+    "wechatIcon": "W",
+    "alipay": "Alipay",
+    "alipayScan": "Scan with Alipay to pay",
+    "footerMotivation": "Your support drives me to keep improving"
+  },
+  "homePage": {
+    "logoChar": "L",
+    "brandName": "LingYe",
+    "logout": "Logout",
+    "exitGuestMode": "Exit Guest Mode",
+    "welcomeTitle": "Welcome to LingYe",
+    "welcomeSubtitle": "Choose a way to start your creative journey",
+    "footerSlogan": "AI-Powered Low-Code Page Builder",
+    "entries": {
+      "templates": {
+        "title": "Template Market",
+        "description": "Choose a template to get started quickly"
+      },
+      "custom": {
+        "title": "Custom Create",
+        "description": "AI-assisted free creation"
+      },
+      "history": {
+        "title": "History",
+        "description": "View your past creations"
+      }
+    }
+  },
+  "feedbackModal": {
+    "title": "Feedback & Contact",
+    "intro": "Thank you for using LingYe. If you have questions or suggestions, feel free to reach out",
+    "githubIssues": "Submit bugs or feature requests",
+    "emailFeedback": "Email Feedback",
+    "qqNote": "Note: Feedback",
+    "footerMotivation": "Your feedback drives me to improve"
+  }
+}

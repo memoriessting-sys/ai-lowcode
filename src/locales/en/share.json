@@ -1,0 +1,88 @@
+{
+  "shareModal": {
+    "title": "Create Share",
+    "nameLabel": "Share Name",
+    "defaultName": "Untitled Share",
+    "scopeLabel": "Save Scope",
+    "currentPage": "Current Page",
+    "allPages": "All Pages",
+    "accessLabel": "Access",
+    "linkGenerated": "Share link generated",
+    "qrcodeAlt": "Share QR Code",
+    "qrcodeFilename": "share-qrcode.png",
+    "downloadQR": "Download QR Code",
+    "createFailed": "Failed to create share"
+  },
+  "exportModal": {
+    "title": "Export Page",
+    "currentEditor": "Current editor: ",
+    "webEditor": "Web Editor",
+    "generalEditor": "General Editor",
+    "formatLabel": "Export Format",
+    "scopeLabel": "Export Scope",
+    "pdfDownloaded": "PDF downloaded",
+    "pdfFailed": "PDF generation failed, please try again",
+    "exportFailed": "Export failed: {{message}}",
+    "formatDesc": {
+      "pdf": "Export as PDF using browser print",
+      "html": "Export as HTML file, viewable in browser",
+      "zip": "Export {{count}} pages as ZIP archive"
+    },
+    "scopeDesc": {
+      "current": "Will export HTML file: {{name}}",
+      "all": "Will export {{count}} pages as ZIP archive"
+    },
+    "fallbacks": {
+      "page": "Page",
+      "button": "Button",
+      "link": "Link",
+      "input": "Enter here",
+      "title": "Title",
+      "content": "Content",
+      "video": "▶ Video",
+      "audio": "🎵 Audio",
+      "select": "Select"
+    }
+  },
+  "importModal": {
+    "title": "Import Share",
+    "linkLabel": "Share Link",
+    "placeholder": "Paste share link, e.g. /share/xxx-xxx-xxx",
+    "invalidLink": "Please enter a valid share link",
+    "fetchFailed": "Failed to fetch share",
+    "importToProject": "Import to Project",
+    "preview": "{{count}} pages · from {{creator}}",
+    "anonymousUser": "Anonymous"
+  },
+  "shareView": {
+    "loadFailed": "Load failed",
+    "backHome": "Back to Home",
+    "copyToProject": "Copy to My Project",
+    "reportTitle": "Report this content",
+    "reportBtn": "Report"
+  },
+  "myShares": {
+    "title": "My Shares",
+    "empty": "No share records",
+    "deleteFailed": "Delete failed"
+  },
+  "report": {
+    "title": "Report Content",
+    "reasons": {
+      "pornography": "Contains pornographic content",
+      "violence": "Contains violent or terror content",
+      "illegal": "Contains illegal content",
+      "plagiarism": "Contains plagiarized content",
+      "spam": "Contains spam or ads",
+      "fraud": "Contains fraudulent information",
+      "other": "Other reason"
+    },
+    "placeholder": "Please describe the reason...",
+    "reasonRequired": "Please select or enter a report reason",
+    "alreadyReported": "You have already reported this content",
+    "submitFailed": "Failed to submit report, please try again later",
+    "submitSuccess": "Report submitted",
+    "thankYou": "Thank you for your feedback, we will process it as soon as possible",
+    "authRequired": "Please login to report"
+  }
+}

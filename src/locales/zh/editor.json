@@ -1,0 +1,219 @@
+{
+  "editElement": "编辑 {{type}}",
+  "sections": {
+    "position": "位置与尺寸",
+    "content": "内容",
+    "style": "样式",
+    "advanced": "高级"
+  },
+  "position": {
+    "width": "宽",
+    "height": "高"
+  },
+  "text": {
+    "content": "文字内容",
+    "fontSize": "字体大小",
+    "color": "文字颜色",
+    "align": "文字对齐",
+    "alignLeft": "左对齐",
+    "alignCenter": "居中",
+    "alignRight": "右对齐",
+    "fontWeight": "字体粗细",
+    "weightNormal": "正常",
+    "weightBold": "粗体"
+  },
+  "image": {
+    "src": "图片地址",
+    "uploadHint": "或上传本地图片",
+    "selectImage": "选择图片",
+    "uploadedImage": "已上传本地图片",
+    "alt": "替代文字",
+    "fillMode": "填充模式",
+    "cover": "覆盖 (cover)",
+    "contain": "包含 (contain)",
+    "fill": "拉伸 (fill)"
+  },
+  "button": {
+    "text": "按钮文字",
+    "bgColor": "背景颜色",
+    "textColor": "文字颜色",
+    "borderRadius": "圆角"
+  },
+  "input": {
+    "placeholder": "占位文字",
+    "borderColor": "边框颜色",
+    "bgColor": "背景颜色"
+  },
+  "container": {
+    "bgColor": "背景颜色",
+    "borderRadius": "圆角",
+    "borderColor": "边框颜色",
+    "borderWidth": "边框宽度"
+  },
+  "video": {
+    "src": "视频地址",
+    "uploadHint": "或上传本地视频",
+    "selectVideo": "选择视频",
+    "uploadedVideo": "已上传本地视频"
+  },
+  "audio": {
+    "src": "音频地址",
+    "uploadHint": "或上传本地音频",
+    "selectAudio": "选择音频",
+    "uploadedAudio": "已上传本地音频"
+  },
+  "link": {
+    "text": "链接文字",
+    "href": "链接地址",
+    "textColor": "文字颜色",
+    "fontSize": "字体大小",
+    "underline": "下划线",
+    "noUnderline": "无下划线",
+    "hasUnderline": "有下划线"
+  },
+  "divider": {
+    "color": "线条颜色",
+    "thickness": "线条粗细",
+    "style": "线条样式",
+    "solid": "实线",
+    "dashed": "虚线",
+    "dotted": "点线"
+  },
+  "icon": {
+    "name": "图标名称",
+    "commonHint": "常用: Star, Heart, Home, User, Settings, Mail, Phone, Search, Bell",
+    "size": "图标大小",
+    "color": "图标颜色"
+  },
+  "card": {
+    "title": "卡片标题",
+    "content": "卡片内容",
+    "bgColor": "背景颜色",
+    "borderRadius": "圆角",
+    "borderColor": "边框颜色",
+    "borderWidth": "边框宽度",
+    "titleColor": "标题颜色",
+    "contentColor": "内容颜色"
+  },
+  "select": {
+    "options": "选项（每行一个）",
+    "placeholder": "占位文字",
+    "borderColor": "边框颜色",
+    "bgColor": "背景颜色"
+  },
+  "advanced": {
+    "pageJump": "跳转页面",
+    "noJump": "无跳转",
+    "useLink": "使用链接地址",
+    "pageJumpHint": "点击按钮将跳转到选中的页面",
+    "selectPageHint": "选择后将跳转到目标页面，忽略链接地址"
+  },
+  "actions": {
+    "deselect": "取消选择",
+    "copyElement": "复制元素",
+    "deleteElement": "删除元素"
+  },
+  "align": {
+    "label": "对齐:",
+    "left": "左对齐",
+    "horizontalCenter": "水平居中",
+    "right": "右对齐",
+    "top": "顶部对齐",
+    "verticalCenter": "垂直居中",
+    "bottom": "底部对齐",
+    "distribute": "分布:",
+    "horizontalSpacing": "水平等间距",
+    "verticalSpacing": "垂直等间距"
+  },
+  "toolbar": {
+    "undo": "撤销 (Ctrl+Z)",
+    "redo": "重做 (Ctrl+Y)",
+    "showGrid": "显示网格",
+    "smartColor": "智能配色",
+    "colorBtn": "配色",
+    "sharePage": "分享页面",
+    "shareBtn": "分享",
+    "importShare": "导入分享链接",
+    "importBtn": "导入",
+    "exportPage": "导出页面",
+    "exportBtn": "导出"
+  },
+  "contextMenu": {
+    "edit": "编辑",
+    "copy": "复制",
+    "delete": "删除",
+    "moveUp": "上移图层",
+    "moveDown": "下移图层",
+    "hideElement": "隐藏元素",
+    "showElement": "显示元素",
+    "selectAll": "全选"
+  },
+  "newPage": {
+    "title": "新建页面",
+    "pageSize": "页面尺寸",
+    "portraitA4": "竖版 A4",
+    "landscapeA4": "横版 A4",
+    "pageName": "页面名称",
+    "namePlaceholder": "输入页面名称",
+    "defaultName": "页面1"
+  },
+  "colorPalette": {
+    "title": "智能配色",
+    "currentPageColors": "当前页面颜色",
+    "selectScheme": "选择配色方案",
+    "schemes": {
+      "freshBlue": "清新蓝",
+      "vibrantOrange": "活力橙",
+      "natureGreen": "自然绿",
+      "elegantPurple": "优雅紫",
+      "passionateRed": "热情红",
+      "calmGray": "沉稳灰",
+      "mintCyan": "薄荷青",
+      "sunsetGold": "日落金",
+      "custom": "自定义"
+    },
+    "customColors": "自定义各元素颜色",
+    "elementColors": {
+      "pageBg": "页面背景",
+      "textColor": "文本颜色",
+      "btnBg": "按钮背景",
+      "btnText": "按钮文字",
+      "inputBorder": "输入框边框",
+      "inputBg": "输入框背景",
+      "containerBg": "容器背景",
+      "containerBorder": "容器边框",
+      "linkColor": "链接颜色",
+      "dividerColor": "分割线颜色",
+      "iconColor": "图标颜色",
+      "cardBg": "卡片背景",
+      "cardBorder": "卡片边框",
+      "cardTitle": "卡片标题",
+      "cardContent": "卡片内容",
+      "selectBorder": "下拉框边框"
+    },
+    "applyCustom": "应用自定义配色",
+    "applyTip": "点击配色方案将应用到整个页面"
+  },
+  "elementLibrary": {
+    "title": "元素库",
+    "pdfCompatible": "(PDF兼容)"
+  },
+  "layerPanel": {
+    "title": "图层",
+    "empty": "暂无元素",
+    "dragToChat": "拖动到聊天框可让AI修改此元素",
+    "deleteElement": "删除元素"
+  },
+  "tabBar": {
+    "close": "关闭",
+    "newPage": "新建页面",
+    "maxPages": "已达到最大页面数量（20个）"
+  },
+  "history": {
+    "title": "历史记录",
+    "empty": "暂无历史记录",
+    "clearAll": "清空全部",
+    "restore": "恢复",
+    "delete": "删除"
+  }
+}

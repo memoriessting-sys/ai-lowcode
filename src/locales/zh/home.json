@@ -1,0 +1,133 @@
+{
+  "landing": {
+    "heroTitle": "用 AI 创造精彩内容",
+    "heroSubtitle": "灵页是一个 AI 驱动的可视化设计平台，帮你快速创建",
+    "heroType1": "简历",
+    "heroType2": "海报",
+    "heroType3": "网页",
+    "heroTypeEnd": "等多种内容，无需设计经验。",
+    "startCreating": "开始创作",
+    "startCreatingHint": "选择模板或自定义创作",
+    "chooseTemplate": "挑选模板",
+    "customCreate": "自定义创作",
+    "getStarted": "开始使用",
+    "getStartedHint": "登录或注册，开启创作之旅",
+    "loginRegister": "登录 / 注册",
+    "guestMode": "游客模式体验",
+    "features": {
+      "aiGenerate": "AI 智能生成",
+      "aiGenerateDesc": "描述你想要的内容，AI 自动生成专业设计",
+      "visualEdit": "可视化编辑",
+      "visualEditDesc": "拖拽调整布局，实时预览效果",
+      "multiExport": "多格式导出",
+      "multiExportDesc": "支持 HTML、PDF、ZIP 等多种导出格式"
+    },
+    "scenarios": {
+      "resume": "专业简历",
+      "resumeDesc": "多种简历模板，一键生成，支持 PDF 导出",
+      "poster": "创意海报",
+      "posterDesc": "活动海报、促销海报、招聘海报轻松制作",
+      "webpage": "网页设计",
+      "webpageDesc": "落地页、产品页、邀请函，导出 HTML 部署"
+    },
+    "stepsTitle": "简单三步，创建你的作品",
+    "stepsSubtitle": "无需设计经验，通过自然语言描述，AI 帮你生成专业设计",
+    "step1": "描述需求",
+    "step1Desc": "用自然语言告诉 AI 你想要的内容",
+    "step2": "AI 生成",
+    "step2Desc": "AI 自动生成完整的设计布局",
+    "step3": "编辑导出",
+    "step3Desc": "拖拽调整细节，导出多种格式",
+    "scenariosTitle": "丰富的应用场景",
+    "scenariosSubtitle": "无论是求职简历、活动海报还是产品落地页，灵页都能帮你轻松搞定",
+    "previewTitle": "产品预览",
+    "editorAlt": "编辑器界面",
+    "editorTitle": "智能编辑器",
+    "editorDesc": "AI对话 + 实时预览 + 拖拽编辑",
+    "marketAlt": "模板市场",
+    "marketTitle": "模板市场",
+    "marketDesc": "简历 / 海报 / 通用模板",
+    "exportAlt": "导出效果",
+    "exportTitle": "多格式导出",
+    "exportDesc": "HTML / PDF / ZIP 打包"
+  },
+  "history": {
+    "title": "历史记录",
+    "localOnly": "(仅保存在本地)",
+    "tabs": {
+      "pages": "页面",
+      "chats": "对话",
+      "shares": "分享"
+    },
+    "emptyPages": "暂无页面历史",
+    "emptyChats": "暂无对话历史",
+    "emptyShares": "暂无分享记录",
+    "emptyChat": "空对话",
+    "aiChat": "AI 对话"
+  },
+  "templateMarket": {
+    "title": "模板市场",
+    "empty": "暂无模板",
+    "noPreview": "暂无预览图",
+    "useTemplate": "使用此模板"
+  },
+  "announcement": {
+    "modalTitle": "重要公告",
+    "dontRemind": "今日不再提醒",
+    "gotIt": "我知道了",
+    "pageTitle": "公告",
+    "empty": "暂无公告",
+    "typeInfo": "通知",
+    "typeWarning": "重要"
+  },
+  "feedback": {
+    "title": "反馈与联系",
+    "intro": "感谢您使用灵页，如有问题或建议，欢迎通过以下方式联系",
+    "submitIssue": "提交问题或建议",
+    "qqGroup": "QQ群",
+    "reportBug": "报告 Bug",
+    "reportBugDesc": "提交错误报告"
+  },
+  "donate": {
+    "title": "支持开发者",
+    "heading": "感谢您的支持！",
+    "body": "如果灵页对您有帮助，欢迎请开发者喝杯咖啡，您的支持是我们持续改进的动力。",
+    "wechatPay": "微信支付",
+    "wechatScan": "微信扫码支付",
+    "wechatIcon": "微",
+    "alipay": "支付宝",
+    "alipayScan": "支付宝扫码支付",
+    "footerMotivation": "您的支持是我持续更新的动力"
+  },
+  "homePage": {
+    "logoChar": "灵",
+    "brandName": "灵页 LingYe",
+    "logout": "退出",
+    "exitGuestMode": "退出游客模式",
+    "welcomeTitle": "欢迎使用灵页",
+    "welcomeSubtitle": "选择一种方式开始您的创作之旅",
+    "footerSlogan": "AI 驱动的低代码页面构建平台",
+    "entries": {
+      "templates": {
+        "title": "模板市场",
+        "description": "选择预设模板快速开始"
+      },
+      "custom": {
+        "title": "自定义创作",
+        "description": "AI 辅助自由创作"
+      },
+      "history": {
+        "title": "历史记录",
+        "description": "查看过往作品"
+      }
+    }
+  },
+  "feedbackModal": {
+    "title": "反馈与联系",
+    "intro": "感谢您使用灵页，如有问题或建议，欢迎通过以下方式联系",
+    "githubIssues": "提交Bug或功能建议",
+    "emailFeedback": "邮件反馈",
+    "qqNote": "备注：意见反馈",
+    "footerMotivation": "您的反馈是我改进的动力"
+  }
+}

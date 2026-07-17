@@ -1,0 +1,219 @@
+{
+  "editElement": "Edit {{type}}",
+  "sections": {
+    "position": "Position & Size",
+    "content": "Content",
+    "style": "Style",
+    "advanced": "Advanced"
+  },
+  "position": {
+    "width": "Width",
+    "height": "Height"
+  },
+  "text": {
+    "content": "Text Content",
+    "fontSize": "Font Size",
+    "color": "Text Color",
+    "align": "Text Align",
+    "alignLeft": "Left",
+    "alignCenter": "Center",
+    "alignRight": "Right",
+    "fontWeight": "Font Weight",
+    "weightNormal": "Normal",
+    "weightBold": "Bold"
+  },
+  "image": {
+    "src": "Image URL",
+    "uploadHint": "Or upload local image",
+    "selectImage": "Select Image",
+    "uploadedImage": "Local image uploaded",
+    "alt": "Alt Text",
+    "fillMode": "Fill Mode",
+    "cover": "Cover",
+    "contain": "Contain",
+    "fill": "Fill"
+  },
+  "button": {
+    "text": "Button Text",
+    "bgColor": "Background Color",
+    "textColor": "Text Color",
+    "borderRadius": "Border Radius"
+  },
+  "input": {
+    "placeholder": "Placeholder",
+    "borderColor": "Border Color",
+    "bgColor": "Background Color"
+  },
+  "container": {
+    "bgColor": "Background Color",
+    "borderRadius": "Border Radius",
+    "borderColor": "Border Color",
+    "borderWidth": "Border Width"
+  },
+  "video": {
+    "src": "Video URL",
+    "uploadHint": "Or upload local video",
+    "selectVideo": "Select Video",
+    "uploadedVideo": "Local video uploaded"
+  },
+  "audio": {
+    "src": "Audio URL",
+    "uploadHint": "Or upload local audio",
+    "selectAudio": "Select Audio",
+    "uploadedAudio": "Local audio uploaded"
+  },
+  "link": {
+    "text": "Link Text",
+    "href": "Link URL",
+    "textColor": "Text Color",
+    "fontSize": "Font Size",
+    "underline": "Underline",
+    "noUnderline": "No Underline",
+    "hasUnderline": "Underline"
+  },
+  "divider": {
+    "color": "Line Color",
+    "thickness": "Line Thickness",
+    "style": "Line Style",
+    "solid": "Solid",
+    "dashed": "Dashed",
+    "dotted": "Dotted"
+  },
+  "icon": {
+    "name": "Icon Name",
+    "commonHint": "Common: Star, Heart, Home, User, Settings, Mail, Phone, Search, Bell",
+    "size": "Icon Size",
+    "color": "Icon Color"
+  },
+  "card": {
+    "title": "Card Title",
+    "content": "Card Content",
+    "bgColor": "Background Color",
+    "borderRadius": "Border Radius",
+    "borderColor": "Border Color",
+    "borderWidth": "Border Width",
+    "titleColor": "Title Color",
+    "contentColor": "Content Color"
+  },
+  "select": {
+    "options": "Options (one per line)",
+    "placeholder": "Placeholder",
+    "borderColor": "Border Color",
+    "bgColor": "Background Color"
+  },
+  "advanced": {
+    "pageJump": "Page Jump",
+    "noJump": "No Jump",
+    "useLink": "Use Link URL",
+    "pageJumpHint": "Clicking the button will navigate to the selected page",
+    "selectPageHint": "Selecting a page will navigate to it, ignoring the link URL"
+  },
+  "actions": {
+    "deselect": "Deselect",
+    "copyElement": "Copy Element",
+    "deleteElement": "Delete Element"
+  },
+  "align": {
+    "label": "Align:",
+    "left": "Align Left",
+    "horizontalCenter": "Center Horizontally",
+    "right": "Align Right",
+    "top": "Align Top",
+    "verticalCenter": "Center Vertically",
+    "bottom": "Align Bottom",
+    "distribute": "Distribute:",
+    "horizontalSpacing": "Distribute Horizontally",
+    "verticalSpacing": "Distribute Vertically"
+  },
+  "toolbar": {
+    "undo": "Undo (Ctrl+Z)",
+    "redo": "Redo (Ctrl+Y)",
+    "showGrid": "Show Grid",
+    "smartColor": "Smart Colors",
+    "colorBtn": "Colors",
+    "sharePage": "Share Page",
+    "shareBtn": "Share",
+    "importShare": "Import Share Link",
+    "importBtn": "Import",
+    "exportPage": "Export Page",
+    "exportBtn": "Export"
+  },
+  "contextMenu": {
+    "edit": "Edit",
+    "copy": "Copy",
+    "delete": "Delete",
+    "moveUp": "Move Up",
+    "moveDown": "Move Down",
+    "hideElement": "Hide Element",
+    "showElement": "Show Element",
+    "selectAll": "Select All"
+  },
+  "newPage": {
+    "title": "New Page",
+    "pageSize": "Page Size",
+    "portraitA4": "Portrait A4",
+    "landscapeA4": "Landscape A4",
+    "pageName": "Page Name",
+    "namePlaceholder": "Enter page name",
+    "defaultName": "Page 1"
+  },
+  "colorPalette": {
+    "title": "Smart Colors",
+    "currentPageColors": "Current Page Colors",
+    "selectScheme": "Select Color Scheme",
+    "schemes": {
+      "freshBlue": "Fresh Blue",
+      "vibrantOrange": "Vibrant Orange",
+      "natureGreen": "Nature Green",
+      "elegantPurple": "Elegant Purple",
+      "passionateRed": "Passionate Red",
+      "calmGray": "Calm Gray",
+      "mintCyan": "Mint Cyan",
+      "sunsetGold": "Sunset Gold",
+      "custom": "Custom"
+    },
+    "customColors": "Customize element colors",
+    "elementColors": {
+      "pageBg": "Page Background",
+      "textColor": "Text Color",
+      "btnBg": "Button Background",
+      "btnText": "Button Text",
+      "inputBorder": "Input Border",
+      "inputBg": "Input Background",
+      "containerBg": "Container Background",
+      "containerBorder": "Container Border",
+      "linkColor": "Link Color",
+      "dividerColor": "Divider Color",
+      "iconColor": "Icon Color",
+      "cardBg": "Card Background",
+      "cardBorder": "Card Border",
+      "cardTitle": "Card Title",
+      "cardContent": "Card Content",
+      "selectBorder": "Select Border"
+    },
+    "applyCustom": "Apply Custom Colors",
+    "applyTip": "Click a scheme to apply it to the page"
+  },
+  "elementLibrary": {
+    "title": "Elements",
+    "pdfCompatible": "(PDF Compatible)"
+  },
+  "layerPanel": {
+    "title": "Layers",
+    "empty": "No elements",
+    "dragToChat": "Drag to chat to let AI modify this element",
+    "deleteElement": "Delete Element"
+  },
+  "tabBar": {
+    "close": "Close",
+    "newPage": "New Page",
+    "maxPages": "Maximum page limit reached (20)"
+  },
+  "history": {
+    "title": "History",
+    "empty": "No history",
+    "clearAll": "Clear All",
+    "restore": "Restore",
+    "delete": "Delete"
+  }
+}
