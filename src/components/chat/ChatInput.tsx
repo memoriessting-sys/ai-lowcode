@@ -28,6 +28,7 @@ export const ChatInput: React.FC = () => {
   const lastContentRef = useRef('');
   const lastUserMessageRef = useRef('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const lastRenderRef = useRef(0); // 上次渲染时间戳，用于节流
   const [droppedElements, setDroppedElements] = useState<DroppedElement[]>([]);
   const [hasLastMessage, setHasLastMessage] = useState(false);
 
@@ -137,10 +138,14 @@ export const ChatInput: React.FC = () => {
             // 不显示 JSON，只显示生成状态
             updateLastMessage(t('input.generating'));
 
-            // 实时尝试解析并更新页面
-            const schema = tryParseIncompleteJson(lastContentRef.current);
-            if (schema) {
-              loadSchema(schema as Parameters<typeof loadSchema>[0]);
+            // 节流：每 100ms 最多触发一次 Canvas 渲染，避免卡顿
+            const now = Date.now();
+            if (now - lastRenderRef.current >= 100) {
+              lastRenderRef.current = now;
+              const schema = tryParseIncompleteJson(lastContentRef.current);
+              if (schema) {
+                loadSchema(schema as Parameters<typeof loadSchema>[0]);
+              }
             }
           },
           onComplete: (fullResponse) => {

@@ -552,7 +552,10 @@ export function parseIncrementalChange(response: string, currentElements: any[])
   }
 }
 
+
 // 尝试解析不完整的 JSON（用于实时渲染）
+// 核心思路：AI 流式输出的 JSON 是逐步构建的，中间状态不完整
+// 我们找到最后一个"安全截断点"，截断到那里，然后补全缺失的括号
 export function tryParseIncompleteJson(response: string): unknown | null {
   // 先尝试完整解析
   try {
@@ -567,36 +570,87 @@ export function tryParseIncompleteJson(response: string): unknown | null {
     try {
       return JSON.parse(jsonMatch[1].trim());
     } catch {
-      return null;
+      // 尝试对代码块中的不完整 JSON 做截断+补全
+      return tryTruncateAndClose(jsonMatch[1].trim());
     }
   }
 
-  // 尝试找到 JSON 对象的开始和结束
+  // 找到 JSON 对象的开始位置
   const jsonStart = response.indexOf('{');
   if (jsonStart === -1) return null;
 
-  // 尝试找到最后一个完整的 JSON 结构
+  return tryTruncateAndClose(response.slice(jsonStart));
+}
+
+// 截断到最后一个安全点 + 补全括号
+// 安全截断点 = 浅层深度（≤2）的逗号或闭合括号位置
+// 这样截断后补全括号，JSON 结构仍然合法
+function tryTruncateAndClose(jsonStr: string): unknown | null {
+  // 1. 找到最后一个安全截断点
   let depth = 0;
-  let lastValidEnd = -1;
+  let inString = false;
+  let escape = false;
+  let lastSafePoint = -1;
 
-  for (let i = jsonStart; i < response.length; i++) {
-    const char = response[i];
-    if (char === '{') depth++;
-    else if (char === '}') {
+  for (let i = 0; i < jsonStr.length; i++) {
+    const char = jsonStr[i];
+    if (escape) { escape = false; continue; }
+    if (char === '\\' && inString) { escape = true; continue; }
+    if (char === '"') { inString = !inString; continue; }
+    if (inString) continue;
+
+    if (char === '{' || char === '[') {
+      depth++;
+    } else if (char === '}' || char === ']') {
       depth--;
-      if (depth === 0) {
-        lastValidEnd = i;
+      // 闭合括号回到浅层时，是安全截断点
+      if (depth <= 2) {
+        lastSafePoint = i;
       }
+    } else if (char === ',' && depth <= 2) {
+      // 浅层深度的逗号也是安全截断点
+      lastSafePoint = i;
     }
   }
 
-  if (lastValidEnd > jsonStart) {
-    try {
-      return JSON.parse(response.slice(jsonStart, lastValidEnd + 1));
-    } catch {
-      return null;
-    }
+  // 2. 截断到最后一个安全点
+  let truncated: string;
+  if (lastSafePoint > 0) {
+    truncated = jsonStr.slice(0, lastSafePoint + 1).trimEnd();
+    // 去掉末尾逗号
+    if (truncated.endsWith(',')) truncated = truncated.slice(0, -1).trimEnd();
+  } else {
+    // 没有安全截断点，尝试直接补全
+    truncated = jsonStr.trimEnd();
+    if (truncated.endsWith(',')) truncated = truncated.slice(0, -1).trimEnd();
   }
 
-  return null;
+  // 3. 统计未闭合的括号
+  let openBraces = 0;
+  let openBrackets = 0;
+  inString = false;
+  escape = false;
+
+  for (let i = 0; i < truncated.length; i++) {
+    const char = truncated[i];
+    if (escape) { escape = false; continue; }
+    if (char === '\\' && inString) { escape = true; continue; }
+    if (char === '"') { inString = !inString; continue; }
+    if (inString) continue;
+    if (char === '{') openBraces++;
+    else if (char === '}') openBraces--;
+    else if (char === '[') openBrackets++;
+    else if (char === ']') openBrackets--;
+  }
+
+  // 4. 补全缺失的括号
+  let completed = truncated;
+  for (let i = 0; i < openBrackets; i++) completed += ']';
+  for (let i = 0; i < openBraces; i++) completed += '}';
+
+  try {
+    return JSON.parse(completed);
+  } catch {
+    return null;
+  }
 }
