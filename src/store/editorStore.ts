@@ -103,8 +103,9 @@ export const useEditorStore = create<EditorState>((set, get) => ({
   },
 
   loadSchema: (schema) => {
-    // 过滤无效元素（没有 id 的元素）
-    const validElements = (schema.elements || []).filter((el: Element) => el && el.id);
+    // 过滤无效元素（没有 id 的元素），并规范化 props 字段名
+    // AI 返回的字段名可能与组件期望的不一致，需要映射
+    const validElements = (schema.elements || []).filter((el: Element) => el && el.id).map(normalizeElementProps);
     set({
       page: schema.page,
       elements: validElements,
@@ -386,3 +387,88 @@ export const useEditorStore = create<EditorState>((set, get) => ({
     });
   },
 }));
+
+// 规范化元素 props 字段名
+// AI 系统提示词中定义的字段名与组件 TypeScript 类型不一致
+// 这里做映射，确保 AI 返回的数据能正确渲染
+function normalizeElementProps(el: Element): Element {
+  if (!el.props || typeof el.props !== 'object') return el;
+
+  const props = { ...el.props } as Record<string, unknown>;
+
+  switch (el.type) {
+    case 'text':
+      // AI 返回 "text"，组件期望 "content"
+      if ('text' in props && !('content' in props)) {
+        props.content = props.text;
+        delete props.text;
+      }
+      break;
+
+    case 'button':
+      // AI 返回 "background"，组件期望 "backgroundColor"
+      if ('background' in props && !('backgroundColor' in props)) {
+        props.backgroundColor = props.background;
+        delete props.background;
+      }
+      // AI 返回 "color"，组件期望 "textColor"
+      if ('color' in props && !('textColor' in props)) {
+        props.textColor = props.color;
+        delete props.color;
+      }
+      break;
+
+    case 'input':
+      // AI 返回 "border"，组件期望 "borderColor"
+      if ('border' in props && !('borderColor' in props)) {
+        props.borderColor = props.border;
+        delete props.border;
+      }
+      // AI 返回 "background"，组件期望 "backgroundColor"
+      if ('background' in props && !('backgroundColor' in props)) {
+        props.backgroundColor = props.background;
+        delete props.background;
+      }
+      break;
+
+    case 'container':
+      // AI 返回 "background"，组件期望 "backgroundColor"
+      if ('background' in props && !('backgroundColor' in props)) {
+        props.backgroundColor = props.background;
+        delete props.background;
+      }
+      break;
+
+    case 'card':
+      // AI 返回 "background"，组件期望 "backgroundColor"
+      if ('background' in props && !('backgroundColor' in props)) {
+        props.backgroundColor = props.background;
+        delete props.background;
+      }
+      break;
+
+    case 'select':
+      // AI 返回 "border"，组件期望 "borderColor"
+      if ('border' in props && !('borderColor' in props)) {
+        props.borderColor = props.border;
+        delete props.border;
+      }
+      // AI 返回 "background"，组件期望 "backgroundColor"
+      if ('background' in props && !('backgroundColor' in props)) {
+        props.backgroundColor = props.background;
+        delete props.background;
+      }
+      break;
+  }
+
+  // 递归处理 container 的 children
+  if (el.type === 'container' && 'children' in el && Array.isArray((el as any).children)) {
+    return {
+      ...el,
+      props: props as Element['props'],
+      children: (el as any).children.map(normalizeElementProps),
+    } as Element;
+  }
+
+  return { ...el, props: props as Element['props'] };
+}
